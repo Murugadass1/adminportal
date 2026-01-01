@@ -52,7 +52,7 @@ const Watch = ({ video, onBack, user }) => {
                 <div style={{ flex: 1, padding: '24px 24px 24px 80px', overflowY: 'auto' }}>
                     <div style={{ width: '100%', aspectRatio: '16/9', background: 'black', borderRadius: '12px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
                         <video key={video.id} controls autoPlay style={{ width: '100%', height: '100%' }}>
-                            <source src={`http://localhost:5000/uploads/${video.filename}`} type="video/mp4" />
+                            <source src={`/uploads/${video.filename}`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
